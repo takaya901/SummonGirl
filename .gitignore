@@ -7,6 +7,8 @@
 Assets/AssetStoreTools/
 Assets/Standard Assets/
 /.idea/
+Assets/Runtime/
+Assets/Editor/
 
 # Visual Studio 2015 cache directory
 /.vs/

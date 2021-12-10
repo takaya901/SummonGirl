@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using Image = UnityEngine.UI.Image;
 
 public class FlushController : MonoBehaviour
@@ -6,7 +7,7 @@ public class FlushController : MonoBehaviour
     Image _image;
     bool _isFlushing;
     float _time;
-    const float LEAPTIME = 2f;
+    [SerializeField] float _fadeTime = 5f;
     [SerializeField] float _speed = 0.05f;
 
     AudioSource _audioSource;
@@ -22,15 +23,12 @@ public class FlushController : MonoBehaviour
     void Update()
     {
         if (!_isFlushing) return;
-
-        //var t = Mathf.Min(_time / LEAPTIME, 1f);
-        //var alpha = Mathf.Lerp(_image.color.a, 0f, _time * _speed);
-        //var alpha = Mathf.MoveTowards(_image.color.a, 0f, Time.deltaTime * _speed);
-        var alpha = Mathf.Max(0f, 1 - QuintIn(_time, 5f, 0f, _image.color.a));
+        
+        var alpha = 1 - QuintIn(_time, _fadeTime, 0f, 1f);
         _image.color = new Color(1f, 1f, 1f, alpha);
         _time += Time.deltaTime;
 
-        if (_image.color == Color.clear) {
+        if (_time >= _fadeTime) {
             _isFlushing = false;
             _audioSource.PlayOneShot(_yahho);
         }
@@ -43,6 +41,7 @@ public class FlushController : MonoBehaviour
         _audioSource.PlayOneShot(_shine);
     }
 
+    // https://qiita.com/pixelflag/items/e5ddf0160781170b671b
     public static float QuintIn(float t, float totaltime, float min, float max)
     {
         max -= min;
