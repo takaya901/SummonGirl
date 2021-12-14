@@ -31,6 +31,7 @@ public class FlushController : MonoBehaviour
         if (_time >= _fadeTime) {
             _isFlushing = false;
             _audioSource.PlayOneShot(_yahho);
+            //gameObject.SetActive(false);
         }
     }
 

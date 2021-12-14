@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,11 +11,16 @@ public class HeightHolder : MonoBehaviour
         FadeManager.FadeIn();
     }
 
+    /// <summary>
+    /// InputFieldのOnEndEditで呼ばれる
+    /// </summary>
     public void SetHeight()
     {
+        if (_field.text == ""){
+            return;
+        }
         SceneManager.sceneLoaded += GameSceneLoaded;
         FadeManager.FadeOut(1);
-        // SceneManager.LoadScene("Main");
     }
     
     void GameSceneLoaded(Scene next, LoadSceneMode mode)

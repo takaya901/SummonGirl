@@ -1190,6 +1190,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScreenspaceUI
       objectReference: {fileID: 0}
+    - target: {fileID: 8381604983331228169, guid: 2a486e108b7ce4d73ab455bd9a5eff9c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8381604984378958222, guid: 2a486e108b7ce4d73ab455bd9a5eff9c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
