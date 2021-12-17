@@ -16,6 +16,7 @@ public class HeightHolder : MonoBehaviour
     /// </summary>
     public void SetHeight()
     {
+        // フォーカス外れたときもOnEndEdit呼ばれるのでスキップ
         if (_field.text == ""){
             return;
         }
