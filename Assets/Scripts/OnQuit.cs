@@ -10,7 +10,6 @@ public class OnQuit : MonoBehaviour
     AudioSource _audioSource;
 
     bool _isQuiting;
-    bool _isQuit, _isCanceled;
 
     void Start()
     {
@@ -23,19 +22,6 @@ public class OnQuit : MonoBehaviour
         if (_isQuiting && !_audioSource.isPlaying) {
             Application.Quit();
         }
-        //if (_isQuit)
-        //{
-        //    _audioSource.Stop();
-        //    _audioSource.PlayOneShot(_bye[Random.Range(0, _bye.Length)]);
-        //    _isQuiting = true;
-        //    _isQuit = false;
-        //}
-        //else if (_isCanceled)
-        //{
-        //    _audioSource.Stop();
-        //    _audioSource.PlayOneShot(_onCanceledVoice);
-        //    _isCanceled = false;
-        //}
 
         if (Input.GetKeyDown(KeyCode.Escape)) {
             ShowQuitDialog();
