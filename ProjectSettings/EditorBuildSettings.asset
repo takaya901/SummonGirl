@@ -106,6 +106,10 @@ EditorBuildSettings:
     path: Assets/Scenes/TransferTest.unity
     guid: 0b2aed2c79e8d421296a74d14ccf017c
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 27f8c71d112ca476abf39bf1a915441e,
+      type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 8bedb985e8dbe4587b48b172f4ca7d7e,
+      type: 2}
     com.unity.xr.arkit.PlayerSettings: {fileID: 11400000, guid: 2d5fb8e61571b4e3897f221189089fd6,
       type: 2}
     com.unity.xr.management.arcore_loader: {fileID: 11400000, guid: 1128f3706632d4b939f1f7ed0fbfa02e,
