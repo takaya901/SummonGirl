@@ -11,12 +11,9 @@ public class FlushController : MonoBehaviour
     bool _isFlushing;
     float _time;
     [SerializeField] float _fadeTime = 5f;
-    [SerializeField] float _speed = 0.05f;
 
     AudioSource _audioSource;
     [SerializeField] AudioClip _shine;
-    [SerializeField] AudioClip _yahho;
-    Animator animator;
     [SerializeField] AnimationClip smile;
 
     void Start()
@@ -36,10 +33,6 @@ public class FlushController : MonoBehaviour
         if (_time >= _fadeTime) {
             _isFlushing = false;
             _girl.GetComponent<IdleChanger>().ChangeState();
-            //_audioSource.PlayOneShot(_yahho);
-            ////(レイヤーの番号、どれだけアニメを出すか0～１）
-            //animator.SetLayerWeight(1, 1f);
-            //animator.Play("smile1@unitychan");
         }
     }
 
@@ -47,7 +40,6 @@ public class FlushController : MonoBehaviour
     {
         _isFlushing = true;
         _girl = girl;
-        animator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
         _image.color = Color.white;
         _audioSource.PlayOneShot(_shine);
     }
