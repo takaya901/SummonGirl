@@ -21,7 +21,12 @@ public class SpringColliderScaler : MonoBehaviour
             t.radius *= resizeMag;
         }
     }
- 
+
+    private void Update()
+    {
+        
+    }
+
     void Awake()
     {
         resizeMag = transform.localScale.x * 0.6f;

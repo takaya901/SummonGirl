@@ -30,7 +30,6 @@ public class Summoner : MonoBehaviour
     void Start()
     {
         FadeManager.FadeIn();
-        Input.backButtonLeavesApp = true;
         _raycastManager = GetComponent<ARRaycastManager>();
         _planeManager = GetComponent<ARPlaneManager>();
     }
@@ -67,6 +66,7 @@ public class Summoner : MonoBehaviour
 
         _screenSpaceUI.SetActive(false);
         _planeManager.requestedDetectionMode = PlaneDetectionMode.None;
+        Input.backButtonLeavesApp = false;
         //UIManagerにUI非表示のアクションを実行させる
         // OnPlacedGirl?.Invoke();
     }

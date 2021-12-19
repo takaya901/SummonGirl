@@ -2228,7 +2228,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u753B\u9762\u3092\u30BF\u30C3\u30D7\u3057\u3066\u306D\uFF01"
+  m_text: "\u5E8A\u3092\u30BF\u30C3\u30D7\u3057\u3066\u306D\uFF01"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 81ebd2764257b4f74b00a616547fc6b1, type: 2}
   m_sharedMaterial: {fileID: -8965736588481733570, guid: 81ebd2764257b4f74b00a616547fc6b1,
@@ -2256,8 +2256,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 90
-  m_fontSizeBase: 90
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
