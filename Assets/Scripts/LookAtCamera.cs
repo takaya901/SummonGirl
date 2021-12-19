@@ -33,7 +33,6 @@ public class LookAtCamera : MonoBehaviour
         var camPos = _cameraTf.position - transform.position;
         camPos.y = 0f;
         var angle = Vector3.Angle(gameObject.transform.forward, camPos);
-        text.text = angle.ToString();
         if (angle > 30f)
         {
             var lookRotation = Quaternion.LookRotation(camPos, Vector3.up);

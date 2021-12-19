@@ -13,6 +13,8 @@ public class Summoner : MonoBehaviour
     [SerializeField] GameObject _girlPrefab = null;
     [SerializeField] FlushController _flush = null;
     [SerializeField] GameObject _screenSpaceUI = null;
+    [SerializeField] Animator animator;
+    [SerializeField] AnimationClip smileAnim;
 
     GameObject _girl;
     ARRaycastManager _raycastManager;
@@ -53,10 +55,9 @@ public class Summoner : MonoBehaviour
         var hitPose = _hits[0].pose;
         var pos = hitPose.position;
 
-        _flush.Flush();
-
         _girl = Instantiate(_girlPrefab, pos, Quaternion.identity);
         _girl.transform.localScale = Vector3.one * Height;
+        _flush.Flush(_girl);
 
         // カメラに向くようにY軸のみ回転
         var lookRotation = Quaternion.LookRotation(Camera.main.transform.position - _girl.transform.position, Vector3.up);
