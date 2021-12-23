@@ -96,7 +96,7 @@ EditorBuildSettings:
     path: Assets/Standard Assets/unity-chan!/Unity-chan! Model/SplashScreen/SplashScreen_Dark
       1.unity
     guid: 0e54ab77ac6484ae280f90b1695502b4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SetHeight.unity
     guid: 83698693b5dad4093a255e62fb493482
   - enabled: 1

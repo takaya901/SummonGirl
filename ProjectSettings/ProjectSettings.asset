@@ -132,9 +132,7 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets:
-  - {fileID: 689476250727534423, guid: 71c0f1b30337249fba12655453bb9b95, type: 2}
-  - {fileID: 4800000, guid: c9f956787b1d945e7b36e0516201fc76, type: 3}
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -270,8 +268,8 @@ PlayerSettings:
   - m_BuildTarget: Android
     m_Icons:
     - m_Textures:
-      - {fileID: 2800000, guid: 88b90ece618f6424eb7dd06cb16c375b, type: 3}
-      - {fileID: 2800000, guid: 88b90ece618f6424eb7dd06cb16c375b, type: 3}
+      - {fileID: 2800000, guid: 18e8b003dbc584b799d8037a807af89c, type: 3}
+      - {fileID: 2800000, guid: 18e8b003dbc584b799d8037a807af89c, type: 3}
       m_Width: 432
       m_Height: 432
       m_Kind: 2
@@ -302,7 +300,7 @@ PlayerSettings:
       m_Kind: 2
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 88b90ece618f6424eb7dd06cb16c375b, type: 3}
+      - {fileID: 2800000, guid: 18e8b003dbc584b799d8037a807af89c, type: 3}
       m_Width: 192
       m_Height: 192
       m_Kind: 1
@@ -338,7 +336,7 @@ PlayerSettings:
       m_Kind: 1
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 88b90ece618f6424eb7dd06cb16c375b, type: 3}
+      - {fileID: 2800000, guid: 18e8b003dbc584b799d8037a807af89c, type: 3}
       m_Width: 192
       m_Height: 192
       m_Kind: 0
@@ -676,6 +674,7 @@ PlayerSettings:
     4: UNITY_POST_PROCESSING_STACK_V2
     7: UNITY_POST_PROCESSING_STACK_V2
     13: UNITY_POST_PROCESSING_STACK_V2
+    14: UNITY_POST_PROCESSING_STACK_V2
     17: UNITY_POST_PROCESSING_STACK_V2
     18: UNITY_POST_PROCESSING_STACK_V2
     19: UNITY_POST_PROCESSING_STACK_V2
@@ -685,6 +684,11 @@ PlayerSettings:
     25: UNITY_POST_PROCESSING_STACK_V2
     26: UNITY_POST_PROCESSING_STACK_V2
     27: UNITY_POST_PROCESSING_STACK_V2
+    28: UNITY_POST_PROCESSING_STACK_V2
+    29: UNITY_POST_PROCESSING_STACK_V2
+    30: UNITY_POST_PROCESSING_STACK_V2
+    32: UNITY_POST_PROCESSING_STACK_V2
+    33: UNITY_POST_PROCESSING_STACK_V2
   additionalCompilerArguments: {}
   platformArchitecture:
     iPhone: 1
